@@ -1,0 +1,22 @@
+<TextView android:id="@+id/tv_floor_time"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:text="TextView"
+    android:textColor="#70cfef"
+    android:textSize="22sp"
+    xmlns:android="http://schemas.android.com/apk/res/android" />
+<!--
+<Button
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/btn_floor_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="@android:color/transparent"
+    android:text=""
+    android:textColor="#70cfef"
+    android:textSize="22sp" />
+-->

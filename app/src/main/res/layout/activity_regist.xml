@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rjwl.reginet.gaotuo.ui.RegistActivity">
+
+    <TextView
+        android:id="@+id/regist_tittle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:text="注册"
+        android:textColor="@color/colorText"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/regist_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="返回" />
+
+    <RelativeLayout
+        android:id="@+id/getCodeRel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/regist_tittle"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="45dp">
+
+        <TextView
+            android:id="@+id/regist_get_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:text="获取验证码"
+            android:textColor="@color/colorGetCode"
+            android:textSize="14sp" />
+
+        <View
+            android:id="@+id/viewview"
+            android:layout_width="1dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/regist_get_code"
+            android:background="@color/colorGrey" />
+
+        <EditText
+            android:id="@+id/regist_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/viewview"
+            android:background="@color/colorTouming"
+            android:hint="请填写手机号码"
+            android:inputType="phone"
+            android:padding="10dp"
+            android:textSize="13sp" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/viewview2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/getCodeRel"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:background="@color/colorTouming" />
+
+    <EditText
+        android:id="@+id/regist_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewview2"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="25dp"
+        android:background="@color/colorTouming"
+        android:hint="请填写验证码"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textSize="13sp" />
+
+    <View
+        android:id="@+id/viewview3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/regist_code"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:background="@color/colorGrey" />
+
+    <EditText
+        android:id="@+id/regist_pw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewview3"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="25dp"
+        android:background="@color/colorTouming"
+        android:hint="请填写登录密码"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textSize="13sp" />
+
+    <View
+
+        android:id="@+id/viewview4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/regist_pw"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:background="@color/colorGrey" />
+
+    <EditText
+        android:id="@+id/regist_pw2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewview4"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="25dp"
+        android:background="@color/colorTouming"
+        android:hint="请重复登录密码"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textSize="13sp" />
+
+    <View
+        android:id="@+id/viewview5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/regist_pw2"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:background="@color/colorGrey" />
+
+    <EditText
+        android:id="@+id/regist_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/regist_pw2"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="25dp"
+        android:background="@color/colorTouming"
+        android:hint="填写昵称(十个字以内)"
+        android:maxLength="10"
+        android:padding="10dp"
+        android:textSize="13sp" />
+
+    <View
+        android:id="@+id/viewview6"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/regist_name"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:background="@color/colorGrey" />
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewview6"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/diantianniu"
+        android:text="注册"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp" />
+
+</RelativeLayout>

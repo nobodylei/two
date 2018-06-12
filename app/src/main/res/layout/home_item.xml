@@ -1,0 +1,10 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/btn_choice_home"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp"
+    android:background="@drawable/diantianniu"
+    android:gravity="center"
+    android:text="XX小区"
+    android:textColor="@color/colorWhite"
+    android:textSize="18sp" />

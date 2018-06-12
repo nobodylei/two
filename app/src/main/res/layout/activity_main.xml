@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rjwl.reginet.gaotuo.ui.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/fragment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#ffffff">
+
+            <ImageView
+                android:id="@+id/gengduo"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="12dp"
+                android:src="@drawable/gengduo" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:src="@drawable/gaotuo" />
+
+            <ImageView
+                android:id="@+id/shuaxin"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentRight="true"
+                android:padding="12dp"
+                android:src="@drawable/shuaixn1" />
+        </RelativeLayout>
+
+        <android.support.design.widget.CoordinatorLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/title_bar"
+
+            android:orientation="vertical">
+
+            <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite">
+
+                <RelativeLayout
+                    android:id="@+id/layout_viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@color/colorGrey"
+                    >
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/viewPager"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+                    </android.support.v4.view.ViewPager>
+                    <LinearLayout
+                        android:id="@+id/viewPager_lineatLayout"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:padding="5dp"
+                            android:layout_margin="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/select"/>
+                        <ImageView
+                            android:padding="5dp"
+                            android:layout_margin="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/nomal"/>
+                        <ImageView
+                            android:padding="5dp"
+                            android:layout_margin="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/nomal"/>
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/wifi_infomation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view_pager"
+                    android:layout_margin="30dp"
+                    android:background="@drawable/biankuang">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/wifi" />
+
+                    <TextView
+                        android:id="@+id/tv_louhao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:maxLength="11"
+                        android:text="楼号电梯号" />
+
+                    <TextView
+                        android:id="@+id/genggai_anniu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/genggaianniu"
+                        android:gravity="center"
+                        android:text="更改"
+                        android:textColor="@color/colorWhite" />
+                </RelativeLayout>
+            </android.support.design.widget.AppBarLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/wifi_infomation"
+                android:paddingTop="15dp"
+                android:scrollbars="vertical"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:src="@drawable/bg" />
+
+                <android.support.v7.widget.RecyclerView
+
+                    android:id="@+id/recycleView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@color/colorTouming" />
+            </RelativeLayout>
+
+
+        </android.support.design.widget.CoordinatorLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/left"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:background="@android:color/white">
+        <android.support.design.widget.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            app:headerLayout="@layout/nav_header_main"
+            app:menu="@menu/activity_main_drawer" />
+
+        <ListView
+            android:id="@+id/left_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ListView>
+    </RelativeLayout>
+
+</android.support.v4.widget.DrawerLayout>

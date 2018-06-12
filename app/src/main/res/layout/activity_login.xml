@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rjwl.reginet.gaotuo.ui.LoginActivity">
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="用户登录"
+        android:textColor="@color/colorText"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="110dp"
+        android:hint="请填写登录账号"
+        android:inputType="phone"
+        android:maxLength="11"
+        android:paddingLeft="15dp"
+        android:textSize="13sp" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="35dp"
+        android:ems="10"
+        android:hint="请填写密码"
+        android:inputType="textPassword"
+        android:paddingLeft="15dp"
+        android:textSize="13sp" />
+
+    <RelativeLayout
+        android:id="@+id/getCodeRel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText2"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="35dp">
+
+        <TextView
+            android:id="@+id/tv_login_get_code"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:text="获取验证码"
+            android:textColor="@color/colorGetCode"
+            android:textSize="14sp" />
+
+        <View
+            android:id="@+id/viewview"
+            android:layout_width="1dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tv_login_get_code"
+            android:background="@color/colorGrey" />
+
+        <EditText
+            android:id="@+id/et_login_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/viewview"
+            android:hint="请填写验证码"
+            android:inputType="phone"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:textSize="13sp" />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/getCodeRel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/diantianniu"
+        android:text="登录"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btn_login"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="15dp"
+        android:text="注册帐号"
+        android:textColor="@color/colorText"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <!--<TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/button"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="15dp"
+
+        android:text="忘记密码"
+        android:textColor="@color/colorText"
+        android:textSize="16sp" />-->
+</RelativeLayout>

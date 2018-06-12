@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="260dp"
+    android:background="@drawable/dialog_kuang">
+
+    <TextView
+        android:id="@+id/wifi_tittle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="可用网络"
+        android:textColor="@color/colorText" />
+
+    <View
+        android:id="@+id/wifi_view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/wifi_tittle"
+        android:background="@color/colorGrey" />
+
+    <ListView
+        android:id="@+id/wifi_recycleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wifi_view1"
+        android:layout_centerInParent="true"
+        android:divider="@drawable/list_divider"
+        android:dividerHeight="1dp" />
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/wifi_dialog_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/wifi_view1">
+
+        <TextView
+            android:id="@+id/empty_view_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="未检测到WIFI"
+            android:textColor="@color/colorText"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/empty_view_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:padding="15dp"
+            android:text="重新获取"
+            android:textSize="15sp" />
+    </RelativeLayout>
+</RelativeLayout>

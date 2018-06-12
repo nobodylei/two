@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?><!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"--><!--android:layout_width="match_parent"--><!--android:layout_height="260dp">-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="260dp"
+    android:background="@drawable/dialog_kuang"
+    android:orientation="vertical"
+    android:scrollbars="vertical">
+
+    <TextView
+        android:id="@+id/floor_tittle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="选择楼层"
+        android:textColor="#70cfef" />
+
+    <View
+        android:id="@+id/floor_view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGrey" />
+
+    <ListView
+        android:id="@+id/floor_recycleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:divider="@drawable/list_divider"
+        android:dividerHeight="1dp" />
+
+
+    <!--<Button
+        android:id="@+id/btn_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:text="1"
+        android:textColor="#70cfef"
+        android:textSize="22sp" />-->
+
+    <!--<View-->
+        <!--android:id="@+id/floor_view2"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="@color/colorGrey" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/btn_one"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@android:color/transparent"-->
+        <!--android:text="1层"-->
+        <!--android:textColor="#70cfef"-->
+        <!--android:textSize="22sp" />-->
+
+    <!--<View-->
+        <!--android:id="@+id/floor_view3"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="@color/colorGrey" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/btn_one_down"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@android:color/transparent"-->
+        <!--android:text="-1层"-->
+        <!--android:textColor="#70cfef"-->
+        <!--android:textSize="22sp" />-->
+
+    <!--<View-->
+        <!--android:id="@+id/floor_view"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="@color/colorGrey" />-->
+
+
+</LinearLayout><!--?</ScrollView>-->

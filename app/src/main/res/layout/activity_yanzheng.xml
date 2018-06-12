@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rjwl.reginet.gaotuo.ui.YanzhengActivity">
+
+    <TextView
+        android:id="@+id/yanzheng_tv"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:text="验证手机号"
+        android:textColor="@color/colorText"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/yanzheng_tv"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="25dp"
+        android:padding="10dp"
+        android:gravity="center"
+        android:text="为了帐户安全，请验证手机号"
+        android:textColor="@color/colorText" />
+
+    <EditText
+        android:id="@+id/yanzheng_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="25dp"
+        android:background="@color/colorTouming"
+        android:hint="请填写验证码"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/yanzheng_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/yanzheng_code"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/diantianniu"
+        android:text="确定"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp" />
+</RelativeLayout>

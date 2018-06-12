@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/xiaoqukuang">
+
+    <TextView
+        android:id="@+id/xiaoqu_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:text="选择设备" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/xiaoqu_recycleView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/xiaoqu_name"
+        android:layout_margin="10dp"></android.support.v7.widget.RecyclerView>
+</RelativeLayout>
